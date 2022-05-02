@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-               git 'https://github.com/intelliqittrainings/maven.git' 
+               git 'https://github.com/jishikasaranyaa/maven1.git' 
             }
         }
         stage('ContinuousBuild')
@@ -38,7 +38,7 @@ pipeline
             {
                 input message: 'need approval from DM', submitter: 'nag'
                 sh 'scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline1/webapp/target/webapp.war ubuntu@172.31.14.130:/var/lib/tomcat9/webapps/prodapp.war'
-            }
+iiii            }
         }
     }
 }
